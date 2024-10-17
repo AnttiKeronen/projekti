@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: #f4f4f9;
+    font-size: 40px;
+    padding: 14px;
+    background-color: #374785; 
+    text-align: center;
+    border-bottom-color: black;
+}
+
+.sääboksi {
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(7, 3, 6, 0.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.säänsyöte {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    text-align: center;
+    flex-wrap: wrap; 
+
+}
+
+.säänsyöte h3 {
+    color: #fff;
+}
+
+.säänsyöte input {
+    display: flex;
+    height: 48px;
+    width: 50%; 
+
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 2px solid #00796B;  
+    color: #010202; 
+    text-align: center;
+}
+
+.säänsyöte button {
+    margin-top: 3px;
+    width: 50%;
+    padding: 12px 0;
+    cursor: pointer;
+    color: #fff; 
+    border-radius: 5px;
+    background-color: #43a047; 
+    font-weight: 600;
+}
+
+.säänsyöte .lempparitnappi {
+    margin-top: 2px;
+}
+
+.säänsyöte .sijaintinappi {
+    background-color: #f57c00; 
+}
+
+.säädata {
+    width: 100%;
+}
+
+.säänyt {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #374785; 
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-color: #010202;
+}
+
+.säänyt h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.säädata h4 {
+    margin-top: 13px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #f4f4f9; 
+}
+
+.säänyt .icon img {
+    max-width: 250px;
+}
+
+.säänyt .icon h4 {
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+.päivänsää h2 {
+    font-size: 30;
+    margin: 10px 0;
+    color: #0d120e; 
+}
+  
+.tulevansäänboksit {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tulevansäänboksit .card {
+    list-style: none;
+    color: #fff; 
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #43a047; 
+    flex: 1;
+    min-width: 180px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tulevansäänboksit .card img {
+    max-width: 75px;
+    margin-bottom: 5px;
+}
+
+.yksikönvaihto {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.yksikönvaihto .yksikönvaihtonappi {
+    padding: 12px 25px;
+    background-color: #f57c00; 
+    border: none;
+    color: #fff; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.lempparitmenu {
+    margin-top: 5px;
+    padding: 10px;
+    border: 2px solid #090a0a;
+    border-radius: 5px;
+    background-color: #374785;
+    color: #fff;
+}
+
+.avaalempparitnappi {
+    background-color: #f57c00;
+    color: #fff;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 2px;
+    border: 2px solid #100d09;
+}
+
+.lempparitlista {
+    list-style: none; 
+    padding: 0; 
+    color: #fff;
+}
+
+.lempparitlista li {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 5px 0;
+    color: #fff;
+}
+
+.poistanappi {
+    background-color: red; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+}
+
+.poistanappi:hover {
+    background-color: darkred; 
+
+}
+
+
+
+
+@media (max-width: 1400px) {
+    .säädata .säänyt {
+        padding: 15px;
+    }
+    .tulevansäänboksit {
+        gap: 20px;
+    }
+    .tulevansäänboksit .card {
+        width: calc(100% / 4 - 10px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .tulevansäänboksit .card {
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+@media (max-width: 950px) {
+    .säänsyöte {
+        width: 100%;
+    }
+    .tulevansäänboksit .card {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 750px) {
+    .sääboksi {
+        padding: 20px;
+    }
+    .tulevansäänboksit .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+    .sääboksi {
+        padding: 15px; 
+    }
+    .säänyt {
+        flex-direction: column;
+        text-align: center; 
+    }
+    .säänyt .icon img {
+        max-width: 150px;
+    }
+    .yksikönvaihto .yksikönvaihtonappi {
+        padding: 10px 20px; 
+    }
+}
+
+
+

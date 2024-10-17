@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Weather app</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <script src= "script.js" defer></script>
+    </head>
+
+    <body>
+        <h1>Weather App</h1>
+        <div class = "sääboksi">
+            <div class ="säänsyöte">
+                <input class="kaupunkisyöte" type="text" placeholder=" Insert location">
+                <button class="etsipainike">Search</button>
+                <button class="lempparitnappi">Add to Favorites</button>
+                <button class="sijaintinappi">Search from your location</button>
+            </div>
+            <div class="säädata">
+                <div class="säänyt">
+                    <div class="details">
+                        <h2> Today's Weather</h2>
+                        <h4>Temp: </h4>
+                        <h4>Wind: </h4> 
+                        <h4>Humidity: </h4>   
+                    </div>
+                    <div class="icon">
+                        <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="weather-icon">
+                        <h4> </h4>
+                    </div>
+                </div>
+                <div class="yksikönvaihto">
+                    <button class="yksikönvaihtonappi">Switch to °F</button>
+                </div>
+                <div class="päivänsää">
+                    <h2>5-Day forecast</h2>
+                    <ul class="tulevansäänboksit">
+                        <li class="card">
+                            <h3> Date </h3>
+                            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="weather-icon">
+                            <h4>Temp: </h4>
+                            <h4>Wind: </h4>
+                            <h4>Humidity: </h4>
+                        </li>
+                        <li class="card">
+                            <h3> Date </h3>
+                            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="weather-icon">
+                            <h4>Temp: </h4>
+                            <h4>Wind: </h4>
+                            <h4>Humidity: </h4>
+                        </li>
+                        <li class="card">
+                            <h3> Date </h3>
+                            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="weather-icon">
+                            <h4>Temp: </h4>
+                            <h4>Wind: </h4>
+                            <h4>Humidity: </h4>
+                        </li>
+                        <li class="card">
+                            <h3> Date </h3>
+                            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="weather-icon">
+                            <h4>Temp: </h4>
+                            <h4>Wind: </h4>
+                            <h4>Humidity: </h4>
+                        </li>
+                        <li class="card">
+                            <h3> Date </h3>
+                            <img src="https://openweathermap.org/img/wn/03d@2x.png" alt="weather-icon">
+                            <h4>Temp: </h4>
+                            <h4>Wind: </h4>
+                            <h4>Humidity: </h4>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="lempparitmenu">
+                <h3>Favorites</h3>
+                <ul class="lempparitlista"></ul>
+            </div>
+            <button class="avaalempparitnappi">View Favorites</button>
+        </div>
+    </body>
+
+</html>
+
+
